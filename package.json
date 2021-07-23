@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     
-    "start":"node index.js",
+    "start":"node index.js"
   },
   "author": "dilkush rajpurohit",
   "license": "ISC",
@@ -14,5 +14,5 @@
     "mongodb": "^4.0.1",
     "mongoose": "^5.13.3",
     "nodemon": "^2.0.12",
-  },
+  }
 }
