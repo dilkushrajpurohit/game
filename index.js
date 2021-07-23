@@ -1,6 +1,7 @@
 const express=require("express")
 const path=require('path')
 const app=express();
+var port = process.env.PORT || 3000;
  app.use(express.static(path.join(__dirname, "static")));
  app.get("/",function(req,res){
  	res.sendfile("index.html")
@@ -11,6 +12,6 @@ const app=express();
  app.get("/Class10",function(req,res){
     res.sendfile("static/class10.html")
  })
- app.listen(3000,()=>{
+ app.listen(port,()=>{
  	console.log('listening at port 4500')
  })
