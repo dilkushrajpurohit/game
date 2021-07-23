@@ -275,4 +275,13 @@ section {
     height: auto;
 }
 
-s
+@media only screen and (max-width: 600px){
+	.main ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.main1 ul{
+		display: flex;
+		flex-direction: column;
+	}
+}
