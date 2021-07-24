@@ -11,8 +11,37 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60fa9695649e0a0a5ccd95cf/1fb9doepr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();0
+</script>
+<!--End of Tawk.to Script-->
 </head>
 <body>
+
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -55,16 +84,103 @@
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit"style="color: white;">Search</button>
+        <button class="btn btn-outline-success" type="submit"style="color: white;height: 50px;width: 70px;">Search</button>
         <p></p>  &emsp;
-            <button class="btn btn-outline-success" type="submit"style="color: white;">Signup</button>
+            <button class="btn btn-outline-success m" type="submit"style="color: white;" href="#myModal" class="trigger-btn" data-toggle="modal">Signup</button>
               &emsp;
+                 <button class="btn btn-outline-success" type="submit"style="color: white;" href="#myModal" data-toggle="modal">Login</button>
             <p></p> 
-                <button class="btn btn-outline-success" type="submit"style="color: white;">Login</button>
       </form>
     </div>
   </div>
 </nav>
+<div class="modal fade mt-3" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="m1">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content pl-2">
+          <div class="modal-header py-0"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div>
+          <div class="container d-flex justify-content-center">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h2 class="title pl-3 pt-0 pb-3">Today's quote</h2>
+                     <h3 class="quote">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."</h3>
+                  </div>
+                  <div class="col-md-6"> <img src="https://i.imgur.com/hTnBa7t.png" width="100%" height="100%"> </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="modal-header">        
+          <h4 class="modal-title">Register your Account</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">        
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" required="required">
+          </div>
+          <div class="form-group">
+            <div class="clearfix">
+              <label>Password</label>
+           
+            </div>
+                <div class="form-group">
+       
+            
+            <input type="password" class="form-control" required="required">
+          </div>
+               <div class="clearfix">
+              <label>Confirm Password</label>
+              <input type="password" class="form-control" required="required">
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <label class="form-check-label"><input type="checkbox"> Remember me</label>
+          <input type="submit" class="btn btn-primary" value="Login">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>     
+      </div>
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="modal-header">        
+          <h4 class="modal-title">Login</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">        
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" required="required">
+          </div>
+          <div class="form-group">
+            <div class="clearfix">
+              <label>Password</label>
+              <a href="#" class="float-right text-muted"><small>Forgot?</small></a>
+            </div>
+            
+            <input type="password" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <label class="form-check-label"><input type="checkbox"> Remember me</label>
+          <input type="submit" class="btn btn-primary" value="Login">
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 
+</div>
 <div class="welcome" style="height: 30%;width: 100%"><img src="logo.png" class="lg">
 <div class="typer" style="text-align:center;">
   
@@ -98,7 +214,7 @@
   <div class="card-body">
     <h5 class="card-title">Class-10</h5>
     <p class="card-text">All books pdf and solutiona as well as notes are avilable here for free of cost.</</p>
-  <a href="/Class10">  <button type="button" class="btn btn-danger" style="position: relative;top:43px;">Start Learnign</button>  </div></a>
+  <a href="/Class10">  <button type="button" class="btn btn-danger" id="bbb">Start Learnign</button>  </div></a>
 </div></li>
 			
 		</ul>
@@ -117,14 +233,14 @@
   <div class="card-body">
     <h5 class="card-title">Ntse exam </h5>
     <p class="card-text">All notes available for ntse prepararationa with practice material are avilable.</p>
-    <button type="button" class="btn btn-danger" style="position:relative;top: 70px;">Start Learning</button>  </div>
+    <button type="button" class="btn btn-danger" style="position:relative;top: 70px;" id="bc">Start Learning</button>  </div>
 </div></li>
 		<li><div class="card" style="width: 18rem;">
   <img src="image4.jfif" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Class-12</h5>
     <p class="card-text">Study materials for lass 12 science and arts for better marks obtaining.</p>
-    <button type="button" class="btn btn-danger" style="position:relative;top: 159px;">Start Learning</button>  </div>
+    <button type="button" class="btn btn-danger" style="position:relative;top: 159px;" id="bb">Start Learning</button>  </div>
 </div></li>
 
 	</ul>
@@ -136,7 +252,7 @@
 
       <div class="footer-left">
 
-        <h3>Company<span>logo</span></h3>
+        <h3>School X<span>:)</span></h3>
 
         <p class="footer-links">
           <a href="#">Home</a>
@@ -152,16 +268,9 @@
           <a href="#">Contact</a>
         </p>
 
-        <p class="footer-company-name">Company Name © 2015</p>
+        <p class="footer-company-name">School X © 2021 All rights reserved</p>
 
-        <div class="footer-icons">
 
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-
-        </div>
 
       </div>
 

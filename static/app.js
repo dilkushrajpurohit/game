@@ -54,3 +54,97 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+    // Plugin options and our code
+$("#modal_trigger").leanModal({
+    top: 100,
+    overlay: 0.6,
+    closeButton: ".modal_close"
+});
+
+$(function() {
+    // Calling Login Form
+    $("#login_form").click(function() {
+        $(".social_login").hide();
+        $(".user_login").show();
+        return false;
+    });
+
+    // Calling Register Form
+    $("#register_form").click(function() {
+        $(".social_login").hide();
+        $(".user_register").show();
+        $(".header_title").text('Register');
+        return false;
+    });
+
+    // Going back to Social Forms
+    $(".back_btn").click(function() {
+        $(".user_login").hide();
+        $(".user_register").hide();
+        $(".social_login").show();
+        $(".header_title").text('Login');
+        return false;
+    });
+});
+$(document).ready(function() {             
+$('#loginModal').modal('show');
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+});
+$(window, document, undefined).ready(function() {
+
+  $('.input').blur(function() {
+    var $this = $(this);
+    if ($this.val())
+      $this.addClass('used');
+    else
+      $this.removeClass('used');
+  });
+  
+  });
+
+
+$('#tab1').on('click' , function(){
+    $('#tab1').addClass('login-shadow');
+   $('#tab2').removeClass('signup-shadow');
+});
+
+$('#tab2').on('click' , function(){
+    $('#tab2').addClass('signup-shadow');
+   $('#tab1').removeClass('login-shadow');
+
+
+});
+if (!sessionStorage.adModal) {
+        setTimeout(function() {
+            $('#admodal').find('.item').first().addClass('active');
+            $('#admodal').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+        }, 3000);
+        $('#adCarousel').carousel({
+          interval: 4000,
+          cycle: true
+        });
+        
+        $("#buttonSuccess").click(function(e){
+            e.preventDefault();
+            var url = $(this).attr("href");
+            var win = window.open(url, '_blank');
+            $('#admodal').modal('hide');
+        })
+        sessionStorage.adModal = 1;
+
+$(document).ready(function(){
+   setTimeout(function showModal() {
+      $('#myModal1').modal('show');
+      setTimeout(showModal, 5000);
+    }, 5000);
+});
+
+setInterval(function() {
+  //Your code
+console.log('m,aoi')
+}, 1000); /
