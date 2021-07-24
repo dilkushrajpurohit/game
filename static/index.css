@@ -261,7 +261,7 @@ section {
 }
 .lg{
 	height: 10%;
-	width: 15%;
+	width: 10%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -306,6 +306,18 @@ section {
 	}
 	#bc{
 		margin-top:-137px;
+	}
+	.ty{
+		height: 5rem;
+		width: 5rem;
+		position: relative;
+		top: 10px;
+	}
+	.main{
+		left: -21px;
+	}
+	.main1{
+		left:-21px
 	}
 }
 #bbb{
@@ -1200,5 +1212,4 @@ background-size:cover;
 z-inedx:4;}
 
 em{display:none;}
-
 
