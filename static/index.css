@@ -277,12 +277,54 @@ section {
 
 @media only screen and (max-width: 600px){
 	.main ul{
-		display: flex;
+	display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 50%;
+	}
+	.card1{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 50px;
+	flex-direction: column;
+	}
+	.navbar{
+		width: 100%;
+	}
+	#welcome{
+		width: 130%;
+	}
+	#hg{
+		font-size: 2rem;
+	}
+	.hey{
+		font-size: 1.5rem;
+	}
+	#ll{
+		width: 60%;
+	}
+	.wrap{
+		font-size: 1.5rem;
+	}
+	.wl img{
+		width:50%;
+	}
+	
+	body{
+		overflow-x: hidden;
+	}
+	.wl{
+		width: 120vw;
 	}
 	.main1 ul{
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0px auto;
 	}
 	.lg{
 		height: 30%;
@@ -1213,3 +1255,84 @@ z-inedx:4;}
 
 em{display:none;}
 
+#welcome{
+	position: relative;
+	margin-top: -20px;
+	height: 500px;
+	width: 100vw;
+	background-color: #f1f1f1;
+}
+body{
+	overflow-x: hidden;
+
+}
+#ll{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5% auto;
+	height: 50%;
+	width: 20%;
+}
+
+#hg {
+  font-size: 3rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+#hgh {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.bn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+#welcome button{
+	margin: 0px 50px;
+}
+.modal {
+	z-index: 10;
+	display: block;
+	padding-top: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.5)
+}
+.modal-content {
+	margin: auto;
+	background-color: #fff;
+	position: relative;
+	padding: 0;
+	outline: 0;
+	max-width: 600px
+}
+.modal-inner { padding: 20px 30px; }
+.modal-close {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #ccc;
+	padding: 6px 10px;
+}
+.animate-opacity { animation: opac 0.8s }@keyframes opac{from{opacity:0} to{opacity:1}}

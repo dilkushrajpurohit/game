@@ -12,6 +12,9 @@ var port = process.env.PORT || 3000;
  app.get("/Class10",function(req,res){
     res.sendfile("static/class10.html")
  })
+ app.get("/login",function(req,res){
+   res.sendfile("static/login.html")
+ })
  app.listen(port,()=>{
  	console.log('listening at port 4500')
  })
