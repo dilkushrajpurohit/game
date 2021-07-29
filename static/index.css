@@ -1336,3 +1336,15 @@ body{
 	padding: 6px 10px;
 }
 .animate-opacity { animation: opac 0.8s }@keyframes opac{from{opacity:0} to{opacity:1}}
+.ads{
+	float: right;
+	border: 2px solid red;
+	height: 80vh;
+	width: 20vw;
+}
+.ads2{
+	height: 20vh;
+	width: 100vw;
+	border: 2px solid red;
+	margin: 0 -50px;
+}
